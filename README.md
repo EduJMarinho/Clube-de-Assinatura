@@ -17,12 +17,10 @@ Acesse aqui 👉 [Clube de Assinatura](https://edujmarinho.github.io/Clube-de-As
 - HTML5
 - CSS3
 - Google Fonts
-- Favicon personalizado
 - Estrutura de pastas limpa e funcional
 
 ## 💡 Funcionalidades
 
-- Layout 100% responsivo para mobile e desktop
 - Tipografia e cores bem harmonizadas
 - Navegação por âncoras
 - Ícones
