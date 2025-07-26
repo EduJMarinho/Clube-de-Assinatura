@@ -1,0 +1,343 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  .animation-books{
+    padding-top: 10rem;
+  }
+
+.books {    
+  max-width: 100%;
+  min-height: 45rem; 
+  }
+  
+ .kit {
+    max-width: 100%;
+    display: block;
+    text-align: center;  
+    gap: .5rem;  
+    margin-bottom: 18rem;
+    margin-top: 20rem;   
+     
+
+    & img {
+      width: 2.5rem;     
+      filter: drop-shadow(0px 0px 1rem var(--pink-base));
+      opacity: 0;
+      animation: text-appear 1s 1s ease both infinite;
+    }
+
+   & h1 {
+    justify-content: space-evenly;   
+    color: var(--text-title);
+    font: var(--title-sm);     
+   }
+
+   & p {
+    font: var(--body-lg);
+   }    
+}
+
+.kit:hover {
+  scale: 1.2;
+  cursor: pointer;
+  color: var(--blue-light);
+  }
+
+/* inicio das animações livro O Castelo da Colina */
+
+.imgbooks { 
+  position: relative;  
+  text-align: center;
+  width: 35rem;
+  height: 41rem;
+  bottom: 15rem;  
+  }
+
+
+  & img[src*="castle"] {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 29rem;
+    height: 38.5rem;    
+    filter: drop-shadow(0 0 1rem rgb(71, 68, 64));
+    border-radius: .5rem;    
+    z-index: 1;    
+    }    
+
+    & img[src*="yellow"] {   
+      position: absolute;    
+      width: 15rem;
+      height: 30rem ;
+      left: 26rem;
+      bottom: 6rem;      
+      z-index: 0;
+      animation: yellow-book 10s 5s ease-in-out infinite;
+      transform: rotate(16deg); 
+      }
+    
+    & img[src*="purple"] {
+      position: absolute;  
+      width: 10rem;
+      height: 33rem ;
+      left: 37rem;        
+      transform: rotate(22deg);
+      animation: purple-book 10s 5s ease-in-out infinite; 
+    }
+
+    & img[src*="botton"] {
+      position: absolute;
+      height: 13.8rem ; 
+      transform: rotate(-8deg);      
+      transform: rotate(-20deg);
+      transition: 1s;
+      animation: botton-book 10s 5s ease-in-out infinite;
+    }
+
+    #one {      
+      display: inline-block;     
+      position: absolute;      
+      transition: 1s ease;
+      transform: rotate(-12deg);
+      animation: arrow-one 10s 5s ease-in-out infinite;
+
+  & img {
+    margin-left: 6rem;
+  }
+  & h3 {
+    margin-right: 6rem;
+    white-space: nowrap;    
+  }  
+}
+
+#two {
+  position: absolute;
+  display: inline-block;  
+  transition: 1s ease;
+  transform: rotate(-06deg);
+  animation: arrow-two 10s 5s ease-in-out infinite;
+  
+  & img {
+    margin-right: 7rem;
+  }
+  & h3 {   
+    white-space: nowrap;
+  }
+}
+
+& #three {
+  position: absolute;
+  display: inline-block;     
+  transform: rotate(-24deg);
+  animation: arrow-three 10s 5s ease-in-out infinite;
+  margin-top: 15rem;  
+  left: 2rem;
+  width: 15rem;
+
+   & img {    
+    margin-left: 5rem;
+  }
+  & h3 {    
+    white-space: nowrap;
+  }
+}
+
+  /* animações Keyframe */
+
+@keyframes yellow-book {
+  10% {    
+    left: 12rem;
+    top: 5rem;
+  }
+  20% {    
+    right: 33rem;
+    top: 10rem;
+  }
+  30% {    
+    right: 38rem;
+    top: 10rem;
+  }
+  50% {    
+    right: 39rem;
+    top: 11rem;
+  }
+  60% {    
+    right: 37rem;
+    top: 7rem;
+  }
+  70% {    
+    right: 35rem;
+    top: 7rem;
+  }   
+  80% {    
+    right: 35rem;
+    top: 7rem;
+  }
+  90% {    
+    right: 18rem;
+    top: 6rem;
+  }    
+  100% {   
+    right: 5rem;
+    top: 5rem;
+  }
+}
+
+@keyframes purple-book {
+  10% {    
+    left: 12rem;
+    top: 5rem;
+  }
+  20% {    
+    right: 33rem;
+    top: 10rem;
+  }
+  30% {    
+    right: 38rem;
+    top: 10rem;
+  }
+  50% {    
+    right: 39rem;
+    top: 11rem;
+  }
+  60% {    
+    right: 37rem;
+    top: 12rem;
+  }
+  70% {    
+    right: 39rem;
+    top: 12rem;
+  }   
+  80% {    
+    right: 39rem;
+    top: 7rem;
+  }
+  90% {    
+    right: 18rem;
+    top: 6rem;
+  }    
+  100% {   
+    right: 5rem;
+    top: 5rem;
+  }
+}
+
+@keyframes botton-book {  
+  20% {
+    top: 15rem;
+     right: 15rem;
+  }
+  30% {
+   top: 31rem;
+      right: 26rem;
+  }
+  50% {
+    top: 31rem;
+     right: 28rem;
+  }
+  70% {
+    top: 32rem;
+     right: 26rem;
+  }  
+  90% {
+   top: 32rem;
+     right: 25rem;
+  }  
+  100% {
+    top: 15rem;
+     right: 15rem;
+  }
+ }
+
+@keyframes arrow-one {
+  20% {
+    bottom: 30rem;
+     right: 8rem;
+  }
+  30% {
+      bottom: 35rem;
+      right: 33rem;
+  }
+  50% {
+    bottom: 35rem;
+      right: 32rem;
+  }
+  70% {
+   bottom: 33rem;
+      right: 33rem;
+  }  
+  90% {
+    bottom: 35rem;
+      right: 32rem;
+  }  
+  100% {
+    bottom: 30rem;
+     right: 8rem;
+  }
+}
+
+@keyframes arrow-two {
+  20% {
+    top: 15rem;
+     right: 10rem;
+  }
+  30% {
+   top: 27rem;
+      right: 36rem;
+  }
+  50% {
+    top: 27rem;
+     right: 37rem;
+  }
+  70% {
+    top: 28rem;
+     right: 36rem;
+  }  
+  90% {
+   top: 28rem;
+     right: 35rem;
+  }  
+  100% {
+    top: 15rem;
+     right: 10rem;
+  }
+}
+
+@keyframes arrow-three {
+  50% {     
+   left: 12rem;
+    top: 5rem;
+  } 
+   60% {    
+    left: 29rem;
+    top: 20rem;
+  }  
+  75% {    
+    left: 30rem;
+    top: 20rem;
+  }   
+   80% {    
+    left: 32rem;
+    top: 16rem;
+  }  
+  85% {    
+    left: 33rem;
+    top: 15rem;
+  }     
+  90% {    
+    left: 34rem;
+    top: 15rem;
+  }    
+  95% {    
+    left: 18rem;
+    top: 16rem;
+  }    
+  100% {    
+    left: 10rem;
+    top: 9rem;
+  }      
+  }
+  
